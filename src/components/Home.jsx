@@ -28,7 +28,6 @@ export default class Home extends Component {
             Nantwich Speakeasy.
           </p>
         </div>
-
         <Footer />
       </div>
     );

@@ -200,6 +200,7 @@ button:hover {
 .HouseContainer {
   grid-area: main;
   padding-top: 50px;
+  padding-bottom: 18.5vh;
   /* padding-left: 4vw; */
   /* padding-right: 25vw; */
   /* border-bottom: 1px solid rgb(194, 212, 182);  */
@@ -240,7 +241,7 @@ button:hover {
 .Container {
   display: grid;
   grid-template-columns: 23% 29% 25% 23%;
-  grid-template-rows: 8vh 28.5vh 55.5vh 8vh;
+  grid-template-rows: 8vh 28.5vh auto 8vh;
   grid-template-areas:
     'header header header header'
     'logo logo logo logo'
@@ -261,22 +262,129 @@ button:hover {
 }
 
 .CardContainer {
-  grid-area: main;
+  /*  */
   /* padding-left: 20vw; */
   /* padding-right: 20vw; */
-  border-bottom: 1px solid rgb(194, 212, 182);
+  /* border-bottom: 1px solid rgb(194, 212, 182); */
 }
 
 .Cards {
-  float: left;
-  width: 50%;
-  padding-right: 40px;
+  grid-area: main;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  /* float: left; */
+  /* width: 50%; */
+  /* padding-right: 40px; */
+}
+
+.Cards img {
+  padding-bottom: 2vh;
+}
+
+.Cards h1 {
+  font-family: 'Futura Light';
+  font-weight: 100;
+  font-size: 150%;
+}
+.Cards h3 {
+  font-family: 'Nunito';
+  font-weight: 100;
+  font-size: 100%;
+  color: rgb(123, 143, 110);
+  padding-bottom: 1vh;
+}
+
+.Cards p {
+  font-family: 'Nunito';
+  font-weight: 100;
+  font-size: 90%;
+  color: rgb(83, 83, 83);
+  letter-spacing: -0.5px;
+  padding-bottom: 5vh;
+  padding-right: 15vh;
+}
+
+.Cards button {
+  cursor: pointer;
+  float: right;
+  background: white;
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
 }
 
 .PoetrySidebar {
   grid-area: sidebar;
   /* float: right; */
   /* width: 10%; */
-  /* padding-left: 20px; */
+  padding-top: 10vh;
+  padding-left: 7vw;
   /* display: inline; */
+  width: 80%;
+}
+
+.PoetrySidebar h2 {
+  font-family: 'Didot';
+  font-weight: 100;
+  font-size: 130%;
+  padding-bottom: 3vh;
+  padding-top: 2vh;
+  color: rgb(64, 82, 53);
+}
+
+.PoetrySidebar input {
+  background-color: rgb(211, 219, 207);
+  outline: none;
+  width: 100%;
+  padding: 8px 28px;
+  padding-left: 15px;
+  font-family: 'Nunito';
+  font-weight: 100;
+  border: 0px;
+}
+
+.PoetrySidebar h3 {
+  font-family: 'Futura Light';
+  font-weight: 100;
+  font-size: 90%;
+  padding-bottom: 1vh;
+  color: rgb(132, 148, 123);
+}
+
+.block {
+  margin-top: 1vh;
+  margin-bottom: 8vh;
+  display: block;
+  width: 100%;
+  border: none;
+  color: white;
+  background-color: rgb(132, 148, 123);
+  padding: 8px 28px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  font-family: 'Nunito';
+  font-weight: 100;
+}
+
+.RecentTitle {
+  font-family: 'Futura Light';
+  font-weight: 100;
+  font-size: 110%;
+}
+
+.RecentDate {
+  font-family: 'Futura Light';
+  font-weight: 100;
+  font-size: 85%;
+  padding-bottom: 1vh;
+  color: rgb(120, 146, 106);
+}
+
+.TagElements {
+  cursor: pointer;
+  font-family: 'Futura Light';
+  font-weight: 100;
+  font-size: 85%;
+  color: rgb(64, 82, 53);
 }
