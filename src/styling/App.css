@@ -1,0 +1,255 @@
+@import url(//db.onlinewebfonts.com/c/2167e76f00e569cc11b3665679996380?family=Futura+Light);
+@import url(//db.onlinewebfonts.com/c/50fdb00bd31f40c13c4fab9f1de2387e?family=Didot);
+
+@font-face {
+  font-family: 'Futura Light';
+  src: url('//db.onlinewebfonts.com/t/2167e76f00e569cc11b3665679996380.eot');
+  src: url('//db.onlinewebfonts.com/t/2167e76f00e569cc11b3665679996380.eot?#iefix')
+      format('embedded-opentype'),
+    url('//db.onlinewebfonts.com/t/2167e76f00e569cc11b3665679996380.woff2')
+      format('woff2'),
+    url('//db.onlinewebfonts.com/t/2167e76f00e569cc11b3665679996380.woff')
+      format('woff'),
+    url('//db.onlinewebfonts.com/t/2167e76f00e569cc11b3665679996380.ttf')
+      format('truetype'),
+    url('//db.onlinewebfonts.com/t/2167e76f00e569cc11b3665679996380.svg#Futura Light')
+      format('svg');
+}
+
+@font-face {
+  font-family: 'Didot';
+  src: url('//db.onlinewebfonts.com/t/50fdb00bd31f40c13c4fab9f1de2387e.eot');
+  src: url('//db.onlinewebfonts.com/t/50fdb00bd31f40c13c4fab9f1de2387e.eot?#iefix')
+      format('embedded-opentype'),
+    url('//db.onlinewebfonts.com/t/50fdb00bd31f40c13c4fab9f1de2387e.woff2')
+      format('woff2'),
+    url('//db.onlinewebfonts.com/t/50fdb00bd31f40c13c4fab9f1de2387e.woff')
+      format('woff'),
+    url('//db.onlinewebfonts.com/t/50fdb00bd31f40c13c4fab9f1de2387e.ttf')
+      format('truetype'),
+    url('//db.onlinewebfonts.com/t/50fdb00bd31f40c13c4fab9f1de2387e.svg#Didot')
+      format('svg');
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.NavBar {
+  background-color: rgb(237, 255, 230);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  box-shadow: 0 30px 40px rgba(255, 255, 255, 0.1);
+}
+
+.NavLinks {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  width: 70em;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(107, 134, 89);
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  color: rgb(153, 187, 133);
+  transition: ease-in 0.3s;
+}
+
+.HomeButton,
+.PoetryButton,
+.FictionButton,
+.NonFictionButton,
+.BlogButton,
+.ContactButton {
+  background: none;
+  color: rgb(107, 134, 89);
+  border: none;
+  padding: 0;
+  font-family: 'Futura Light';
+  cursor: pointer;
+  outline: inherit;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .NavBar {
+    background-color: rgb(194, 221, 181);
+  }
+  .NavLinks {
+    padding-top: 5em;
+    padding-bottom: 20em;
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background: rgb(194, 221, 181);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    z-index: 1000;
+    transition: transform 0.5s ease-in;
+  }
+  .NavLinks button {
+    opacity: 0;
+  }
+  .burger {
+    position: absolute;
+    display: block;
+    right: 30px;
+  }
+  .HomeButton,
+  .PoetryButton,
+  .FictionButton,
+  .NonFictionButton,
+  .BlogButton,
+  .ContactButton {
+    color: white;
+    padding-bottom: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom: 1px solid rgb(146, 170, 130);
+    font-size: 100%;
+  }
+}
+
+.NavActive {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+  background-color: white;
+}
+.toggle .line2 {
+  opacity: 0;
+  background-color: white;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+  background-color: white;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.PoetryProse {
+  text-align: center;
+  font-family: 'EB Garamond';
+  font-size: 125%;
+  font-weight: 100;
+  color: rgb(107, 134, 89);
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(194, 212, 182);
+}
+
+.HomeBody {
+  padding-top: 40px;
+  padding-left: 25vw;
+  padding-right: 25vw;
+  border-bottom: 1px solid rgb(194, 212, 182);
+}
+
+.About,
+.AboutContent {
+  align-content: center;
+  padding-left: 27vw;
+  font-family: 'Nunito';
+  font-weight: 100;
+  letter-spacing: 0px;
+  color: rgb(83, 83, 83);
+  padding-bottom: 30px;
+}
+
+.HouseContainer {
+  display: inline-block;
+}
+
+.AboutContainer {
+  display: inline-block;
+  position: relative;
+  top: -25vh;
+  margin-bottom: 20px;
+}
+
+.HomeFooter {
+  max-height: 1vh;
+  padding-top: 5vh;
+  padding-left: 20vw;
+  padding-right: 20vw;
+}
+
+.CopyRightFooter {
+  float: left;
+  color: rgb(83, 83, 83);
+  font-family: 'Nunito';
+  font-weight: 100;
+  font-size: 90%;
+}
+
+.ContactIcons {
+  float: right;
+}
+
+.ContactIcons i {
+  padding-left: 15px;
+  padding-right: 15px;
+  color: rgb(83, 83, 83);
+}
+
+.CardContainer {
+  display: inline-block;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  border-bottom: 1px solid rgb(194, 212, 182);
+}
+
+.Cards {
+  float: left;
+  width: 50%;
+  padding-right: 40px;
+}
+
+.PoetrySidebar {
+  float: right;
+  width: 10%;
+  padding-left: 20px;
+  /* display: inline; */
+}
