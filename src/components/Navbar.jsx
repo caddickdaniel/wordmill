@@ -28,31 +28,33 @@ export default class Navbar extends Component {
 
   render() {
     return (
-      <div className="NavBar">
-        <div className="NavLinks">
-          <Link to="/">
-            <button className="HomeButton">HOME</button>
-          </Link>
-          <Link to="/poetry">
-            <button className="PoetryButton">POETRY</button>
-          </Link>
-          <Link to="/fiction">
-            <button className="FictionButton">FICTION</button>
-          </Link>
-          <Link to="/nonfiction">
-            <button className="NonFictionButton">NON-FICTION</button>
-          </Link>
-          <Link to="/blog">
-            <button className="BlogButton">BLOG</button>
-          </Link>
-          <Link to="/contact">
-            <button className="ContactButton">CONTACT</button>
-          </Link>
-        </div>
-        <div className="burger" onClick={() => this.navSlide()}>
-          <div className="line1" />
-          <div className="line2" />
-          <div className="line3" />
+      <div className="HeaderContainer">
+        <div className="NavBar">
+          <div className="NavLinks">
+            <Link to="/">
+              <button className="HomeButton">HOME</button>
+            </Link>
+            <Link to="/poetry">
+              <button className="PoetryButton">POETRY</button>
+            </Link>
+            <Link to="/fiction">
+              <button className="FictionButton">FICTION</button>
+            </Link>
+            <Link to="/nonfiction">
+              <button className="NonFictionButton">NON-FICTION</button>
+            </Link>
+            <Link to="/blog">
+              <button className="BlogButton">BLOG</button>
+            </Link>
+            <Link to="/contact">
+              <button className="ContactButton">CONTACT</button>
+            </Link>
+          </div>
+          <div className="burger" onClick={() => this.navSlide()}>
+            <div className="line1" />
+            <div className="line2" />
+            <div className="line3" />
+          </div>
         </div>
       </div>
     );

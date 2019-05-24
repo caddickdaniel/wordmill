@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 export default class Poetry extends Component {
   render() {
     return (
-      <div>
+      <div className="Container">
         <Navbar />
         <Logo />
         <div className="CardContainer">
@@ -67,10 +67,8 @@ export default class Poetry extends Component {
               <p>Childhood Nature Spirituality</p>
             </div>
           </div>
-          <div>
-            <Footer />
-          </div>
         </div>
+        <Footer />
       </div>
     );
   }

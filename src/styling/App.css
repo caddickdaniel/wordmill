@@ -166,6 +166,7 @@ button:hover {
 
 .logo {
   display: block;
+  margin-top: 8px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -180,38 +181,40 @@ button:hover {
   border-bottom: 1px solid rgb(194, 212, 182);
 }
 
-.HomeBody {
-  padding-top: 40px;
-  padding-left: 25vw;
-  padding-right: 25vw;
-  border-bottom: 1px solid rgb(194, 212, 182);
-}
-
 .About,
 .AboutContent {
   align-content: center;
-  padding-left: 27vw;
+  padding-left: 1vw;
   font-family: 'Nunito';
   font-weight: 100;
   letter-spacing: 0px;
   color: rgb(83, 83, 83);
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
+}
+
+.About {
+  padding-top: 8vh;
+  padding-bottom: 3vh;
 }
 
 .HouseContainer {
-  display: inline-block;
+  grid-area: main;
+  padding-top: 50px;
+  /* padding-left: 4vw; */
+  /* padding-right: 25vw; */
+  /* border-bottom: 1px solid rgb(194, 212, 182);  */
 }
 
 .AboutContainer {
-  display: inline-block;
-  position: relative;
-  top: -25vh;
-  margin-bottom: 20px;
+  grid-area: sidebar;
+  /* top: -25vh; */
+  /* margin-bottom: 20px; */
 }
 
 .HomeFooter {
+  border-top: 1px solid rgb(194, 212, 182);
   max-height: 1vh;
-  padding-top: 5vh;
+  padding-top: 3vh;
   padding-left: 20vw;
   padding-right: 20vw;
 }
@@ -234,10 +237,33 @@ button:hover {
   color: rgb(83, 83, 83);
 }
 
+.Container {
+  display: grid;
+  grid-template-columns: 23% 29% 25% 23%;
+  grid-template-rows: 8vh 28.5vh 55.5vh 8vh;
+  grid-template-areas:
+    'header header header header'
+    'logo logo logo logo'
+    '. main sidebar .'
+    'footer footer footer footer';
+}
+
+.FooterContainer {
+  grid-area: footer;
+}
+
+.HeaderContainer {
+  grid-area: header;
+}
+
+.LogoContainer {
+  grid-area: logo;
+}
+
 .CardContainer {
-  display: inline-block;
-  padding-left: 20vw;
-  padding-right: 20vw;
+  grid-area: main;
+  /* padding-left: 20vw; */
+  /* padding-right: 20vw; */
   border-bottom: 1px solid rgb(194, 212, 182);
 }
 
@@ -248,8 +274,9 @@ button:hover {
 }
 
 .PoetrySidebar {
-  float: right;
-  width: 10%;
-  padding-left: 20px;
+  grid-area: sidebar;
+  /* float: right; */
+  /* width: 10%; */
+  /* padding-left: 20px; */
   /* display: inline; */
 }
