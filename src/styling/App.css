@@ -238,6 +238,13 @@ button:hover {
   color: rgb(83, 83, 83);
 }
 
+.MessageContainer {
+  grid-area: main;
+  padding-bottom: 39vh;
+  width: 180%;
+  text-align: center;
+}
+
 .Container {
   display: grid;
   grid-template-columns: 23% 29% 25% 23%;
@@ -387,4 +394,208 @@ button:hover {
   font-weight: 100;
   font-size: 85%;
   color: rgb(64, 82, 53);
+}
+
+#spanner {
+  padding-left: 10px;
+}
+
+.FormContainer {
+  grid-area: main;
+  padding-bottom: 23vh;
+  width: 180%;
+  padding-left: 10vw;
+  padding-right: 8vw;
+  text-align: left;
+}
+
+.FormTitle {
+  padding-top: 5vh;
+  padding-bottom: 3vh;
+  font-family: 'Futura Light';
+  font-weight: 100;
+  font-size: 150%;
+  color: rgb(64, 82, 53);
+}
+
+::placeholder {
+  color: rgb(64, 82, 53);
+}
+
+.FormName,
+.FormEmail,
+.FormSubject,
+.FormMessage,
+.FormButton {
+  border: none;
+  border-bottom: 1px solid rgb(64, 82, 53);
+  padding: 5px;
+  padding-top: 1vh;
+  color: rgb(64, 82, 53);
+}
+.FormName {
+  width: 50%;
+}
+.FormEmail {
+  width: 50%;
+}
+.FormSubject {
+  width: 100%;
+}
+.FormMessage {
+  width: 100%;
+  padding-bottom: 8vh;
+}
+.FormButton {
+  text-align: center;
+  color: rgb(64, 82, 53);
+  cursor: pointer;
+  background: white;
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
+}
+form h3 {
+  color: rgb(120, 146, 106);
+  font-family: 'Futura Light';
+  font-weight: 100;
+  font-size: 100%;
+}
+
+@media screen and (max-width: 1440px) {
+  .Container {
+    grid-template-columns: 16% 37% 31% 16%;
+  }
+
+  .HouseContainer {
+    padding-bottom: 23vh;
+  }
+
+  .FormContainer {
+    padding-bottom: 25vh;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .Container {
+    grid-template-columns: 6% 54% 39% 2%;
+  }
+
+  .MessageContainer {
+    width: 160%;
+  }
+
+  .FormContainer {
+    width: 160%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Container {
+    grid-template-rows: 8vh 28.5vh auto auto 8vh;
+    grid-template-areas:
+      'header header header header'
+      'logo logo logo logo'
+      'main main main main'
+      'sidebar sidebar sidebar sidebar'
+      'footer footer footer footer';
+  }
+
+  .HouseContainer {
+    padding-left: 20vw;
+    width: 100%;
+    padding-bottom: 5vh;
+  }
+  .About,
+  .AboutContent {
+    text-align: center;
+    padding-top: 0vw;
+    padding-bottom: 3vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+
+  .Cards {
+    grid-area: main;
+    padding-left: 10vw;
+  }
+
+  .Cards button {
+    padding-right: 5vw;
+  }
+
+  .PoetrySidebar {
+    text-align: center;
+    padding-left: 7vw;
+    width: 90%;
+  }
+
+  .TagElements {
+    padding-bottom: 3vh;
+  }
+
+  .MessageContainer {
+    width: 100%;
+  }
+
+  .FormContainer {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .Container {
+    max-width: 425px;
+    max-height: 94vh;
+  }
+  .HouseContainer {
+    padding-left: 0vw;
+  }
+
+  .CopyRightFooter {
+    float: none;
+    text-align: center;
+    padding-bottom: 2vh;
+  }
+
+  .ContactIcons {
+    text-align: center;
+    float: none;
+  }
+
+  .ContactIcons i {
+    padding-left: 15px;
+    padding-right: 15px;
+    color: rgb(83, 83, 83);
+  }
+
+  .Cards {
+    padding-left: 0vw;
+  }
+
+  .Cards h3,
+  h1,
+  p {
+    padding-left: 5vw;
+  }
+
+  .Cards img {
+    padding-left: 10vw;
+    max-width: 90%;
+    height: auto;
+  }
+  .MessageContainer {
+    padding-top: 3vh;
+    padding-bottom: 30vh;
+  }
+
+  .FormContainer {
+    padding-bottom: 18vh;
+  }
+}
+
+@media screen and (max-width: 375px) {
+}
+
+@media screen and (max-width: 320px) {
 }

@@ -6,10 +6,21 @@ import Footer from '../components/Footer';
 export default class Contact extends Component {
   render() {
     return (
-      <div>
+      <div className="Container">
         <Navbar />
         <Logo />
-        <h1 className="heading">HELLO WORLD</h1>
+        <div className="FormContainer">
+          <h3 className="FormTitle">Get in touch</h3>
+          <form action="">
+            <input type="text" className="FormName" placeholder="Name" />
+            <input type="text" className="FormEmail" placeholder="Email" />
+            <input type="text" className="FormSubject" placeholder="Subject" />
+            <input type="text" className="FormMessage" placeholder="Message" />
+            <div className="FormButton">
+              <button className="FormButton">Send</button>
+            </div>
+          </form>
+        </div>
         <Footer />
       </div>
     );
