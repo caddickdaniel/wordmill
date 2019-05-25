@@ -464,6 +464,8 @@ form h3 {
 
 @media screen and (max-width: 1440px) {
   .Container {
+    max-width: 1440px;
+    grid-template-rows: 8vh 28.5vh auto 8vh;
     grid-template-columns: 16% 37% 31% 16%;
   }
 
@@ -478,6 +480,7 @@ form h3 {
 
 @media screen and (max-width: 1024px) {
   .Container {
+    max-width: 1024px;
     grid-template-columns: 6% 54% 39% 2%;
   }
 
@@ -492,6 +495,7 @@ form h3 {
 
 @media screen and (max-width: 768px) {
   .Container {
+    max-width: 768px;
     grid-template-rows: 8vh 28.5vh auto auto 8vh;
     grid-template-areas:
       'header header header header'
