@@ -200,7 +200,7 @@ button:hover {
 .HouseContainer {
   grid-area: main;
   padding-top: 50px;
-  padding-bottom: 18.5vh;
+  padding-bottom: 21.5vh;
   /* padding-left: 4vw; */
   /* padding-right: 25vw; */
   /* border-bottom: 1px solid rgb(194, 212, 182);  */
@@ -247,7 +247,7 @@ button:hover {
 
 .Container {
   display: grid;
-  grid-template-columns: 23% 29% 25% 23%;
+  grid-template-columns: auto 29vw 25vw auto;
   grid-template-rows: 8vh 28.5vh auto 8vh;
   grid-template-areas:
     'header header header header'
@@ -466,7 +466,7 @@ form h3 {
   .Container {
     max-width: 1440px;
     grid-template-rows: 8vh 28.5vh auto 8vh;
-    grid-template-columns: 16% 37% 31% 16%;
+    grid-template-columns: 16% 37% 31% auto;
   }
 
   .HouseContainer {
@@ -474,14 +474,14 @@ form h3 {
   }
 
   .FormContainer {
-    padding-bottom: 25vh;
+    padding-bottom: 23vh;
   }
 }
 
 @media screen and (max-width: 1024px) {
   .Container {
     max-width: 1024px;
-    grid-template-columns: 6% 54% 39% 2%;
+    grid-template-columns: 6% 54% 39% 1%;
   }
 
   .MessageContainer {
